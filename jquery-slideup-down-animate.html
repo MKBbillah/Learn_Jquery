@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Mamurjor IT</title>
+
+    <script src="jqury.min.js"></script>
+
+    <style>
+
+  #slider{
+    padding: 10px;
+    height: 120px;
+    text-align: center;
+    background-color: blueviolet;
+    display: none;
+  }
+
+    </style>
+
+    </head>
+<body>
+  
+  <div id="slider"> Mamurjor IT</div>
+
+<div id="ani" style="background-color: aqua; height: 150px; width: 150px; position: absolute;">
+
+</div>
+
+  <script>
+
+  $(document).ready(function(){
+      $("#slider").slideDown(10000);
+      $("slider").slideUp(10000);
+
+      $("#ani").animate({
+        left: '500px',
+        opacity: '0.2',
+        height: '200px',
+        width: '300px'
+    }, 10000);
+  });
+
+
+  </script>
+
+</body>
+</html>
