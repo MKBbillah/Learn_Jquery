@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #slider{
+    background-color: blueviolet; 
+    color: red;
+    }
+    </style>
+</head>
+<body>
+ 
+<h1> <b> Jquery Get Html </b> </h1>
+
+  <div id="slider">Mukarram</div>
+
+  <input type="text" name="username" id="name">
+
+  <button id="change">Get Value </button>
+  <a href="mamurjor.com"> Official Site</a>
+
+
+  <script>
+
+  $(document).ready(function(){
+
+Text()
+html()
+val()
+attr()
+
+    $("#change").click(function(){
+     alert($("a").attr("href")); //val()) ///html()) //text()) "#slider"
+    });
+
+  });
+
+
+  </script>
+  
+</body>
+</html>
