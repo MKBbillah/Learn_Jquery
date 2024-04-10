@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"> </script>
+
+  <style>
+
+#slider{
+    padding: 10px;
+    height: 120px;
+    text-align: center;
+    background-color: blueviolet;
+}
+.box{
+    width: 200px; height: 200px; background-color: brown;
+}
+.changebox{
+    width: 400px; height: 600px; background-color: aqua;
+}
+  </style>
+</head>
+<body>
+ 
+
+<div class="box"></div>
+
+
+<button>Add Class</button>
+<button>remove Class</button>
+
+
+
+<script>
+  
+$(document).ready(function(){
+   $("button").click(function(){
+    $("div").removeClass("box")
+    $("div").addClass("changebox")
+    $("div").toggleClass("changebox")
+   });
+});
+
+
+
+</script>
+  
+</body>
+</html>
