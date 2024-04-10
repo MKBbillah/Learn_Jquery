@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"> </script>
+
+
+  <style>
+    #slider {
+      background-color: blueviolet; 
+      color: red;
+    }
+  </style>
+</head>
+<body>
+ 
+
+<table id="invoice">
+<th>
+  <td>
+    Slno.
+
+</td>
+
+<td>
+  Price
+
+</td>
+
+<td>
+  Qty
+
+</td>
+
+<td>
+  Operation
+
+</td>
+
+</th>
+  <tr>
+    <td>
+      <td>
+        <input type="number" name="Price" id="Qty">
+      </td>
+
+      <td>
+        <input type="number" name="qty" id="Qty">
+      </td>
+
+  <button id="add">add More</button> || <button> Remove</button>
+</td>
+
+</tr>
+</table>
+<script>
+  $(document).ready(function(){
+
+//Text()
+//html()
+//val()
+//attr()
+
+    //$("button").click(function(){
+  //   $("span").text("Welcome To Mamurjor IT"); //val()) ///html()) //text()) "#slider"
+     //$("span").html("<h1> Allah Mohan </h1>")
+      //  $("username").val("MamurjorIT");
+    
+    //});
+
+    //$("#set").click(function(){
+  
+      //  $("username").val("MamurjorIT");
+    //});
+
+    //$("#get").click(function(){
+     //alert($("username").val());
+    //});
+    // Click event handler for the button to add list items
+    $("#listadd").click(function(){
+      $("ol").append("<li>my Add</li>");
+    });
+
+    // Append text to the h1 element
+    //$("h1").append(" - Best IT in BD");
+
+   $("#add").click(function(){
+       
+    $("#invoice").append();
+
+   });
+
+    $("h1").prepend("Mirpur");
+
+    //Append()
+//prepend()
+//after()
+// before()
+
+  });
+</script>
+  
+</body>
+</html>
