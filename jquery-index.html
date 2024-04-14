@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="jquery.min.js"></script>
+
+  <style>
+    #slider{
+    background-color: blueviolet; 
+    }
+    </style>
+</head>
+<body>
+
+  <div id="slider"> mamunjor IT</div>
+
+  <div id="message">Just 2 Minute Show</div>
+
+<button> Change Color </button>
+
+  <button>Stop</button>
+
+  <script>
+
+  //$(document).ready(function(){
+   //     $("#message").hide("slow");
+  //});
+
+
+    $(document).ready(function(){
+
+      $("#slider").css("background-color", "red").slideDown(2000).slideUp(300);
+
+      //$("#slider").slideDown("slow", function(){
+        // alert("Vaiya Time Out");
+     // });
+
+     // $("button").click(function(){
+
+       // $("#slider").stop();
+      //});
+
+    });
+
+
+
+  </script>
+  
+</body>
+</html>
